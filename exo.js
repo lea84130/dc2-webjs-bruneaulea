@@ -63,3 +63,29 @@ créer un deuxième bouton display lorsqu'on clique ca affiche le contenu du loc
 			}
 
 		});
+
+var str= "https://wwww.domain.com/page?name=francois1&id=opwiueru3920983r2&lastname=john";
+
+var url= new URL(str);
+var search_params= new URLSearchParams(url.search);
+if(search_params.has('name')) {
+	var name = search_params.get ('name');
+	console.log(name)
+}
+
+
+
+var url= new URL(str);
+var search_params= new URLSearchParams(url.search);
+if(search_params.has('id')) {
+	var id = search_params.get ('id');
+	console.log(id)
+}
+
+
+var url= new URL(str);
+var search_params= new URLSearchParams(url.search);
+if(search_params.has('lastname')) {
+	var lastname = search_params.get ('lastname');
+	console.log(lastname)
+}
